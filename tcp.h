@@ -721,7 +721,7 @@ class VegasTcpAgent : public virtual TcpAgent {
 	   virtual void recv(Packet *pkt, Handler *);
 	   virtual void timeout(int tno);
    protected:
-	   double vegastime() {
+	   double elastictime() {
 		   return(Scheduler::instance().clock() - firstsent_);
 	   }
 	   virtual void output(int seqno, int reason = 0);
@@ -774,7 +774,6 @@ class VegasTcpAgent : public virtual TcpAgent {
 	double e_RTTbase_;	// min of all rtt
 	double e_RTTmax_;	// max of all rtt
 	double e_RTTcurrent; // current rtt
-	int    e_alpha_;    	// vegas thruput thresholds in pkts
 	int    e_beta_;        // multiplicative decrease factor
 	
 

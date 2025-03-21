@@ -107,7 +107,7 @@ VegasTcpAgent::delay_bind_init_all()
 }
 
 int
-VegasTcpAgent::delay_bind_dispatch(const char *varName, const char *localName, 
+ElasticTcpAgent::delay_bind_dispatch(const char *varName, const char *localName, 
 				   TclObject *tracer)
 {
 	/* init vegas var */
@@ -123,9 +123,9 @@ VegasTcpAgent::delay_bind_dispatch(const char *varName, const char *localName,
 }
 
 void
-VegasTcpAgent::reset()
+ElasticTcpAgent::reset()
 {
-
+	e_RTTbase
 
 	TcpAgent::reset();
 }
@@ -150,7 +150,7 @@ VegasTcpAgent::recv_newack_helper(Packet *pkt)
 void
 VegasTcpAgent::recv(Packet *pkt, Handler *)
 {
-	double currentTime = vegastime();
+	double currentTime = elastictime();
 	hdr_tcp *tcph = hdr_tcp::access(pkt);
 	hdr_flags *flagh = hdr_flags::access(pkt);
 
