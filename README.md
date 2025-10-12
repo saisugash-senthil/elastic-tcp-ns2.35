@@ -4,7 +4,11 @@ This repo contains a crude (and almost accurate) implementation of Elastic-TCP i
 
 Credits:
 Saisugash Senthil (B.Tech CSE, NIT Rourkela), @saisugash-senthil
+
 Amiya Chowdhury (B.Tech CSE, NIT Rourkela), @Yearningyeati1
+
 Peeyush Das (B.Tech CSE, NIT Rourkela), @PeeyushDas
+
 Sandeep Kumar Das (B.Tech CSE, NIT Rourkela), @Sandeep-622
+
 Anirudh Venkateswaran (B.Tech CSE, NIT Rourkela), @anivenk25
