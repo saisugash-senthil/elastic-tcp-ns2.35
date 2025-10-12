@@ -8,7 +8,7 @@ The project was developed as part of the 6th semester **Computer Networks** labo
 ## 📘 Overview
 
 Elastic-TCP is a congestion control algorithm designed to optimize network performance by adapting transmission rates based on dynamic network conditions.  
-This project provides a functional (and nearly accurate) implementation of Elastic-TCP within the ns-2.35 simulator environment.
+This project provides a functional (and nearly accurate) implementation of Elastic-TCP within the ns-2.35 simulator environment. It has been implemented by modifying the implementation of an exisiting TCP congestion control algorithm.
 
 ---
 
