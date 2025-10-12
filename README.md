@@ -1,14 +1,56 @@
-# elastic-tcp-ns2.35
+# Elastic-TCP in NS-2.35
 
-This repo contains a crude (and almost accurate) implementation of Elastic-TCP in ns-2.35's Linux Module. It has been implemented as a Laboratory Project under the supervision of Prof. Sanjeev Patel, NIT Rourkela.
+This repository contains an implementation of **Elastic-TCP** in **ns-2.35's Linux Module**.  
+The project was developed as part of a **Laboratory Project** under the supervision of **Prof. Sanjeev Patel**, *National Institute of Technology, Rourkela*.
 
-Credits:
-Saisugash Senthil (B.Tech CSE, NIT Rourkela), @saisugash-senthil
+---
 
-Amiya Chowdhury (B.Tech CSE, NIT Rourkela), @Yearningyeati1
+## 📘 Overview
 
-Peeyush Das (B.Tech CSE, NIT Rourkela), @PeeyushDas
+Elastic-TCP is a congestion control algorithm designed to optimize network performance by adapting transmission rates based on dynamic network conditions.  
+This project provides a functional (and nearly accurate) implementation of Elastic-TCP within the ns-2.35 simulator environment.
 
-Sandeep Kumar Das (B.Tech CSE, NIT Rourkela), @Sandeep-622
+---
 
-Anirudh Venkateswaran (B.Tech CSE, NIT Rourkela), @anivenk25
+## 🧠 Supervision
+
+**Prof. Sanjeev Patel**  
+*Department of Computer Science and Engineering*  
+*National Institute of Technology, Rourkela*
+
+---
+
+## 👥 Contributors
+
+| Name | GitHub Profile | Affiliation |
+|------|----------------|--------------|
+| **Saisugash Senthil** | [@saisugash-senthil](https://github.com/saisugash-senthil) | B.Tech CSE, NIT Rourkela |
+| **Amiya Chowdhury** | [@Yearningyeati1](https://github.com/Yearningyeati1) | B.Tech CSE, NIT Rourkela |
+| **Peeyush Das** | [@PeeyushDas](https://github.com/PeeyushDas) | B.Tech CSE, NIT Rourkela |
+| **Sandeep Kumar Das** | [@Sandeep-622](https://github.com/Sandeep-622) | B.Tech CSE, NIT Rourkela |
+| **Anirudh Venkateswaran** | [@anivenk25](https://github.com/anivenk25) | B.Tech CSE, NIT Rourkela |
+
+---
+
+## ⚙️ Requirements
+
+- **ns-2.35**
+- Linux (Ubuntu recommended)
+- C++ compiler (`g++`)
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/elastic-tcp-ns2.35.git
+
+# Navigate to the ns-2.35 directory
+cd ns-2.35
+
+# Compile ns-2.35 with the Elastic-TCP module
+make clean && make
+
+# Run your simulation scripts
+ns your_script.tcl
